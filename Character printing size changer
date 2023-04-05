@@ -1,0 +1,132 @@
+import java.util.Scanner;  
+public class Main {
+	int size;
+	String Strings = " ";
+    private static void draw(int scale) {
+    	for(int i=0; i < scale/3.8; i++) {
+         System.out.print("  "); 
+    	}
+    	for(int i=0; i < scale/2.3; i++) {
+            System.out.print("--"); 
+       	}
+    	for(int i=0; i < scale/4.6; i++) {
+            System.out.print("  "); 
+       	}
+    	System.out.println("  ");
+    	for(int i=0; i < scale/5.75; i++) {
+            System.out.print("  "); 
+       	}
+       	for(int i=0; i < scale/1.5; i++) {
+               System.out.print("()"); 
+          	}
+       	for(int i=0; i < scale/5.75; i++) {
+               System.out.print("  "); 
+          	}
+       	System.out.println("  ");
+       	for(int i=0; i < scale/11.5; i++) {
+            System.out.print("  "); 
+       	}
+    	
+       	for(int i=0; i < scale/1.20; i++) {
+            System.out.print("()"); 
+       	}
+    	
+       	for(int i=0; i < scale/11.5; i++) {
+            System.out.print("  "); 
+       	}
+       	System.out.println("  ");
+       	for(int i=0; i < scale/23; i++) {
+            System.out.print("  "); 
+           
+       	}
+       	for(int i=0; i < scale/1; i++) {
+            System.out.print("()"); 
+       	}
+       	for(int i=0; i < scale/23; i++) {
+            System.out.print("  "); 
+       	}
+       	System.out.println("  ");
+         
+    }
+    private static void draw2(int scale) {
+    	for(int i=0; i < scale/11.5; i++) {
+            System.out.print("  "); 
+       	}
+       	for(int i=0; i < scale/1; i++) {
+               System.out.print("()"); 
+          	}
+       	for(int i=0; i < scale/2.875; i++) {
+               System.out.print("  "); 
+          	
+       	}
+       	System.out.println("  ");
+       	for(int i=0; i < scale/2.875; i++) {
+            System.out.print("   "); 
+       	}
+       	for(int i=0; i < scale/2; i++) {
+               System.out.print(".."); 
+          	}
+       	
+       	for(int i=0; i < scale/23; i++) {
+               System.out.print("  "); 
+          	}
+       	System.out.println("  ");
+   }
+    
+    public static void main(String args[]) 
+    { 
+        Scanner zack = new Scanner(System.in);  
+        System.out.println("How big if your brain?");
+           int size =zack.nextInt();
+           if(size < 23 ) {
+        	   System.out.println("Comeon your brain is bigger than a walnut, enter a value above 23");
+        	   
+           }
+           else {
+        draw(size);
+        for(int i= 0; i < size/11.5; i++ ){
+            System.out.print("((");
+            
+            
+
+            for(int l = 0; l < size/1; l++ ){
+                System.out.print("..");
+
+            }
+            System.out.println("))");
+         }
+        
+        draw2(size);
+           }
+          
+            
+
+            for(int l = 0; l < size/2; l++ ){
+                System.out.print("   ");
+
+            }
+            
+            System.out.print("(      )");
+            System.out.println("");
+            for(int l = 0; l < size/2; l++ ){
+                System.out.print("   ");
+
+            }
+            
+            System.out.print("  (    )");
+            System.out.println("");
+            for(int l = 0; l < size/2; l++ ){
+                System.out.print("   ");
+
+            }
+            
+            System.out.print("   (  )");
+           
+        
+            
+   
+    }
+    } 
+
+
+
